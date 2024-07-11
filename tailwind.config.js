@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        madimi: ['Madimi One', 'cursive'],
+        ruda: ['Ruda', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
