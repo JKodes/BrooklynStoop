@@ -9,7 +9,7 @@ export default function NavBar() {
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
         <Link
-          href="#"
+          href="/about"
           className="text-sm font-medium hover:underline underline-offset-4"
         >
           About
@@ -21,7 +21,7 @@ export default function NavBar() {
           Items
         </Link>
         <Link
-          href="#"
+          href="#contact"
           className="text-sm font-medium hover:underline underline-offset-4"
         >
           Location
