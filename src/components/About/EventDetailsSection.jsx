@@ -1,4 +1,24 @@
+import { useEffect, useState } from "react";
+
 export default function EventDetailsSection() {
+  const [daysRemaining, setDaysRemaining] = useState(calculateDaysRemaining());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDaysRemaining(calculateDaysRemaining());
+    }, 1000 * 60 * 60);
+    return () => clearInterval(interval);
+  }, []);
+
+  function calculateDaysRemaining() {
+    const eventStartDate = new Date("2024-07-20T09:00:00");
+    const now = new Date();
+    const difference = eventStartDate - now;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    return days > 0 ? days : 0;
+  }
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="px-4 md:px-6">
@@ -13,7 +33,12 @@ export default function EventDetailsSection() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <CalendarIcon className="h-6 w-6" />
-                <p>May 6th, 2023 - May 7th, 2023</p>
+                <p>
+                  July 20th, 2024 - July 27th, 2024{" "}
+                  <span className="font-bold">
+                    ({daysRemaining} days remaining)
+                  </span>
+                </p>
               </div>
               <div className="flex items-center gap-2">
                 <ClockIcon className="h-6 w-6" />
