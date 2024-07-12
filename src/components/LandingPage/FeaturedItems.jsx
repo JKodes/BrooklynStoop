@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 export default function FeaturedItems() {
   const featuredItems = [
     {
@@ -29,7 +31,7 @@ export default function FeaturedItems() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <section className="w-full py-8 md:py-12 bg-muted">
       <div className="px-6 md:px-16">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -48,7 +50,7 @@ export default function FeaturedItems() {
         </div>
         <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {featuredItems.map((item) => (
-            <div className="flex flex-col items-start space-y-2 hover:rounded-xl overflow-hidden w-[300px] h-[400px]">
+            <div className="flex flex-col items-start space-y-2 hover:rounded-xl overflow-hidden w-[300px] h-[300px]">
               <img
                 src={item.imgSrc}
                 alt="Item 1"
@@ -59,6 +61,11 @@ export default function FeaturedItems() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <Link href="/stoop-sale" className="bg-primary rounded-md px-4 py-2">
+          View More
+        </Link>
       </div>
     </section>
   );
