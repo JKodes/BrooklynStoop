@@ -18,10 +18,10 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+        <div className="mx-auto grid items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
-            <h3 className="text-xl font-bold">Discover Local Treasures</h3>
-            <p className="text-muted-foreground">
+            <h3 className="text-xl font-bold md:ml-20">Discover Local Treasures</h3>
+            <p className="text-muted-foreground md:ml-20">
               The Brooklyn Stoop Sale is a unique opportunity to connect with
               the vibrant community of Carroll Gardens. Browse the stalls of
               local vendors, artisans, and community members as they showcase
