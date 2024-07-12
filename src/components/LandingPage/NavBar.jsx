@@ -15,7 +15,7 @@ export default function NavBar() {
           About
         </Link>
         <Link
-          href="#"
+          href="/stoop-sale"
           className="text-sm font-medium hover:underline underline-offset-4"
         >
           Items
