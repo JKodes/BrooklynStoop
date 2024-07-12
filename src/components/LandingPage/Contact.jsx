@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="w-full py-12 bg-gray-100">
+    <section id="contact" className="w-full py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
@@ -26,10 +26,10 @@ export default function Contact() {
             />
             <textarea
               placeholder="Your Message"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2 h-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
               rows="4"
             ></textarea>
-            <button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+            <button className="inline-flex py-3 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
               Send Message
             </button>
           </div>

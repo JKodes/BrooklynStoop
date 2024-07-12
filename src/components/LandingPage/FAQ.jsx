@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="w-full py-12 bg-white">
+    <section id="faq" className="w-full py-12 bg-muted">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">

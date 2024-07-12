@@ -48,13 +48,11 @@ export default function FeaturedItems() {
         </div>
         <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {featuredItems.map((item) => (
-            <div className="flex flex-col items-start space-y-2">
+            <div className="flex flex-col items-start space-y-2 hover:rounded-xl overflow-hidden w-[300px] h-[400px]">
               <img
                 src={item.imgSrc}
-                width="300"
-                height="200"
                 alt="Item 1"
-                className="aspect-[3/2] w-full overflow-hidden rounded-xl object-cover"
+                className="aspect-[3/2] w-full overflow-hidden rounded-xl object-cover hover:scale-110 transition duration-300"
               />
               <h3 className="text-lg font-bold">{item.title}</h3>
               <p className="text-muted-foreground">{item.description}</p>

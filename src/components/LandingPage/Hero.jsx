@@ -2,15 +2,15 @@ import { Link } from "wouter";
 
 export default function Hero() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-8 md:py-20">
       <div className="px-8 md:px-16">
-        <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+        <div className="flex flex-col-reverse justify-center gap-20">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Carrol Gardens Stoop Sale
               </h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">
+              <p className="max-w-[900px] text-muted-foreground md:text-xl">
                 Join us for a vibrant, eclectic stoop sale in the heart of
                 Carrol Gardens, featuring a curated selection of vintage finds,
                 local artisan goods, and neighborhood treasures.
@@ -25,10 +25,8 @@ export default function Hero() {
           </div>
           <img
             src="landing-page/flea_market.jpeg"
-            width="550"
-            height="550"
             alt="Stoop Sale"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+            className="mx-auto w-full h-96 bg-center aspect-video overflow-hidden rounded-xl object-cover lg:order-last"
           />
         </div>
       </div>
